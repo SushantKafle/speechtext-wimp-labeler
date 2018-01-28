@@ -5,14 +5,14 @@ This project demonstrates the use of generic bi-directional LSTM models for pred
 
 ![Word Importance Visualization in a Dialgoue](https://github.com/SushantKafle/speechtext-wimp-labeler/blob/master/images/word-importance.png "Word Importance Visualization in a Dialgoue")
 
-Performance Summary:
---------------------
+Performance Summary (will-be-updated-soon):
+-------------------------------------------
 <br/>
 
 | Model     | Classes   | f-score   | rms   |
 |:------------------------------:   |:-------:  |:-------:  |------ |
-| bi-LSTM (char-embedding + CRF)    | 3     | xx    | 0.xx  |
-| bi-LSTM (char-embedding + CRF)    | 6     | xx    | 0.xx  |
+| bi-LSTM (char-embedding + CRF)    | 3     | 0.73    | 0.598  |
+| bi-LSTM (char-embedding + CRF)    | 6     | 0.xx    | 0.xx  |
 
 <br/>
 
