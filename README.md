@@ -3,7 +3,7 @@ Generic Bi-LSTM Model for Word Importance Prediction in Spoken Dialogues:
 
 This project demonstrates the use of generic bi-directional LSTM models for predicting importance of words in a spoken dialgoue for understanding its meaning. The model operates on human-annotated corpus of word importance for its training and evaluation. The corpus can be downloaded from: http://latlab.ist.rit.edu/lrec2018
 
-![Word Importance Visualization in a Dialgoue](https://github.com/SushantKafle/speechtext-wimp-labeler/images/word-importance.png "Word Importance Visualization in a Dialgoue")
+![Word Importance Visualization in a Dialgoue](https://github.com/SushantKafle/speechtext-wimp-labeler/blob/master/images/word-importance.png "Word Importance Visualization in a Dialgoue")
 
 Performance Summary:
 --------------------
