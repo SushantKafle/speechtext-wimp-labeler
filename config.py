@@ -21,7 +21,7 @@ class Config():
     random_seed = 1000
 
     # general config
-    output_path = "results/test/"
+    output_path = "results/exp-1/"
     model_output = output_path + "model.weights/"
     log_path = output_path + "log.txt"
     confusion_mat = output_path + "confusion-mat.png"
@@ -34,13 +34,13 @@ class Config():
     trimmed_filename = "data/glove.6B.300d.trimmed.npz"
 
     # dataset
-    dev_filename = "data/12_26/testa.txt"
-    test_filename =  "data/12_26/testb.txt"
-    train_filename = "data/12_26/train.txt"
+    dev_filename = "data/testa.txt"
+    test_filename =  "data/testb.txt"
+    train_filename = "data/train.txt"
     
     # vocab
-    words_filename = "data/12_26/words.txt"
-    chars_filename = "data/12_26/chars.txt"
+    words_filename = "data/words.txt"
+    chars_filename = "data/chars.txt"
 
     # training
     train_embeddings = False
@@ -87,12 +87,5 @@ class Config():
 
     def digitize_labels(self, tags):
         return list(map(self.ann2class, tags))
-
-    def set_output_path(self, path):
-        self.output_path = path
-        self.model_output = self.output_path + "model.weights/"
-        self.log_path = self.output_path + "log.txt"
-        self.confusion_mat = self.output_path + "confusion-mat.png"
-        self.compare_predictions = self.output_path + "compare-predictions.csv"
 
 
