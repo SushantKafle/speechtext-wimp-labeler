@@ -18,11 +18,9 @@ Performance Summary (will-be-updated-soon):
 
 You can cite this work and/or the corpus using:
 
-<pre>
-Sushant Kafle and Matt Huenerfauth. 2018.  A Corpus for  Modeling  Word  Importance  in  Spoken  Dialogue Transcripts.   In Proceedings  of  the  11th  edition  of the Language Resources and Evaluation Conference (LREC). ACM.
-</pre>
+> Sushant Kafle and Matt Huenerfauth. 2018.  A Corpus for  Modeling  Word  Importance  in  Spoken  Dialogue Transcripts.   In Proceedings  of  the  11th  edition  of the Language Resources and Evaluation Conference (LREC). ACM.
 
-
+<br/>
 I. Data Preparation
 ====================
 
