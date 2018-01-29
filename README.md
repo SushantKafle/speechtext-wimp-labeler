@@ -12,7 +12,7 @@ Performance Summary (will-be-updated-soon):
 | Model     | Classes   | f-score   | rms   |
 |:------------------------------:   |:-------:  |:-------:  |------ |
 | bi-LSTM (char-embedding + CRF)    | 3     | 0.73    | 0.598  |
-| bi-LSTM (char-embedding + CRF)    | 6     | 0.xx    | 0.xx  |
+| bi-LSTM (char-embedding + CRF)    | 6     | 0.60    | 0.154  |
 
 <br/>
 
