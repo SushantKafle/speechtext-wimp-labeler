@@ -1,3 +1,5 @@
+from math import floor
+
 from config import Config
 import xlrd, os, random, csv
 from data_utils import AnnotationDataset, get_vocabs, UNK, NUM, \
@@ -48,9 +50,9 @@ def build_data(config):
     random.shuffle(annotations)
 
     #80% for training, 10% dev, 10% test
-    d_train = annotations[ : 0.8 * len(annotations)]
-    d_test = annotations[0.8 * len(annotations) : 0.9 * len(annotations)]
-    d_dev = annotations[0.9 * len(annotations) : ]
+    d_train = annotations[ : floor(0.8 * len(annotations))]
+    d_test = annotations[floor(0.8 * len(annotations)) : floor(0.9 * len(annotations))]
+    d_dev = annotations[floor(0.9 * len(annotations)): ]
 
     def prep_text_data(D, outfile):
         with open(outfile, 'w') as f:
