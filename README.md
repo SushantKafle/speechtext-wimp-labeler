@@ -30,20 +30,27 @@ I. Data Preparation
 
 	*	In the “config.py” file, update the varibles shown below:
 
-	    	# location of the Word Improtance Corpus
+	    	# location of the Word Importance Corpus "annotations folder"
 	    	wimp_corpus = --HERE-- 
 
 	    	# location of the Switchboard transcripts
 	    	swd_transcripts = --AND HERE--
 
-2. Run the ‘build_data.py’ to prepare data for training, development and testing as:
+2. Download glove vectors `glove.6B.300d.txt` from http://nlp.stanford.edu/data/glove.6B.zip and update `glove_filename` in `config.py`
+
+3. Run the ‘build_data.py’ to prepare data for training, development and testing as:
 
 	```python build_data.py```
 
 This will create all the necessary files (such as the word vocabulary, character vocabulary and the training, development and test files) in the “$PROJECT_HOME/data/“ directory.
 
+II. Install Python Dependencies
+======================
 
-II. Running the model
+`pip install -r requirements.txt`
+
+
+III. Running the model
 ======================
 
 1. Traverse inside the model you want to train and open the ‘config.py’ file and review the configurations:
@@ -99,7 +106,7 @@ Summary:
 *	CSV file containing the actual scores and the predicted score at “compare_predictions” (declared inside config.py).
 
 
-III. Running the agreement analysis
+IV. Running the agreement analysis
 ====================================
 
 1. Locate the csv file containing the actual scores annotated by the annotators and the predicted scores.
