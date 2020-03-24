@@ -40,6 +40,7 @@ class Config():
     
     # vocab
     words_filename = "data/words.txt"
+    tags_filename = "data/tags.txt"
     chars_filename = "data/chars.txt"
 
     # training
