@@ -187,7 +187,7 @@ class WImpModel(object):
         for i, (words, imp_labels) in enumerate(minibatches(train, self.config.batch_size)):
 
             if self.config.model == "lstm_crf":
-                imp_labels = map(self.config.digitize_labels, imp_labels)
+                imp_labels = list(map(self.config.digitize_labels, imp_labels))
 
             fd, _ = self.get_feed_dict(words, imp_labels, self.config.lr, self.config.dropout)
             _, train_loss = sess.run([self.optimize_, self.loss], feed_dict=fd)
